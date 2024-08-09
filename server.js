@@ -435,6 +435,3 @@ app.use((req, res, next) => {
   res.status(404).sendFile(path.join(__dirname, 'public', '404', '404.html'));
 });
 
-app.listen(port, ip, () => {
-  console.log(`Serwer działa na http://${ip}:${port}`);
-});
