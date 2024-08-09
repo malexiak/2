@@ -437,5 +437,5 @@ app.use((req, res, next) => {
 });
 
 app.listen(port, () => {
-  console.log(`Express server running at ${PORT}`);
+  console.log(`Express server running at ${port}`);
 });
