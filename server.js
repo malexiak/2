@@ -10,8 +10,6 @@ const multer = require('multer');
 const fs = require('fs');
 
 const app = express();
-const port = 5000;
-const ip = '192.168.100.12';
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
