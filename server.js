@@ -10,6 +10,7 @@ const multer = require('multer');
 const fs = require('fs');
 
 const app = express();
+const port = 5000;
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
@@ -435,3 +436,6 @@ app.use((req, res, next) => {
   res.status(404).sendFile(path.join(__dirname, 'public', '404', '404.html'));
 });
 
+app.listen(port, () => {
+  console.log(`Express server running at ${PORT}`);
+});
